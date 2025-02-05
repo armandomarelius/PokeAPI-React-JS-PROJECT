@@ -23,7 +23,7 @@ Ensure you have **Node.js** installed on your system.
 ### Clone the Repository
 ```bash
 git clone https://github.com/armandomarelius/PokeAPI-React-JS-PROJECT.git
-cd pokemon-explorer
+cd PokeAPI-React-JS-PROJECT
 ```
 
 ### Install Dependencies
