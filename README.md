@@ -1,68 +1,75 @@
-# Pokemon Explorer (by Armando Marelius)
+# Aplicación Explorador de Pokémon 🐱
 
-Pokemon Explorer is a React application that allows users to browse, search, and favorite their favorite Pokémon using the [PokeAPI](https://pokeapi.co/). It includes features like a responsive UI, React Router navigation, and state management with context.
+Una sencilla aplicación de Pokémon construida con React y Node.js que te permite explorar Pokémon, añadirlos a favoritos y ver sus detalles.
 
-## Features
-- Browse a list of Pokémon
-- View detailed Pokémon information
-- Search for Pokémon
-- Add Pokémon to a favorites list
-- Responsive design with Tailwind CSS
+## Características 🌟
+- Ver lista de Pokémon
+- Buscar Pokémon por nombre
+- Añadir/Eliminar Pokémon de favoritos
+- Ver detalles de Pokémon
+- Integración con base de datos MongoDB
+- Gestión visual de la base de datos con Mongo Express
 
-## Technologies Used
-- **React** (with Hooks)
-- **React Router** (for navigation)
-- **Tailwind CSS** (for styling)
-- **PokeAPI** (for fetching Pokémon data)
-- **Context API** (for state management)
+## Requisitos Previos 📋
+- Node.js
+- Docker Desktop
+- Git
 
-## Installation
-### Prerequisites
-Ensure you have **Node.js** installed on your system.
+## Instalación 🚀
 
-### Clone the Repository
+1. Clona el repositorio:
 ```bash
-git clone https://github.com/armandomarelius/PokeAPI-React-JS-PROJECT.git
-cd PokeAPI-React-JS-PROJECT
-```
-
-### Install Dependencies
-```bash
-npm install
-```
-
-### Run the Development Server
-```bash
-npm run dev
-```
-This will start the app on `http://localhost:5173/` (default Vite port).
+git clone https://github.com/tu-usuario/Pokemon.git
+cd Pokemon
 
 
-## Usage
-### Browsing Pokémon
-- Visit the homepage to see a list of Pokémon.
-- Each Pokémon card displays an image and a name.
-- Click on **Details** to view more information.
+## variables de entorno 
+frontend (.env)
+VITE_API_URL=http://localhost:3000
 
-### Searching Pokémon
-- Use the search functionality to find a Pokémon by name.
+backend (.env)
+MONGODB_URI=mongodb://mongodb:27017/pokemon_db
+PORT=3000
+FRONT_URL=http://localhost
+POKE_URL=https://pokeapi.co/api/v2/pokemon
 
-### Adding to Favorites
-- Click **Add to favs** to add a Pokémon to your favorites list.
-- Visit the **Favorites** page to view saved Pokémon.
 
-## API Usage
-The app fetches data from [PokeAPI](https://pokeapi.co/):
-- **List Pokémon:** `https://pokeapi.co/api/v2/pokemon?limit=20`
-- **Single Pokémon:** `https://pokeapi.co/api/v2/pokemon/{name}`
 
-## Issues and Contributions
-If you encounter any issues or have feature requests, feel free to open an issue on the repository.
-
-## License
-This project is open-source and available under the MIT License.
-
----
-Made with ❤️ using React & Tailwind!
-By Armando Marelius Garcia Paulsen
-
+  ## Basic Usage 📱
+1. Abre http://localhost:5173 en navegador 
+2. Browse the Pokemon list on the home page
+3. Click "Add to favs" to add Pokemon to favorites
+4. Click "Details" to see more information about a Pokemon
+5. Visit the Favorites page to see your favorite Pokemon
+6. Use Mongo Express ( http://localhost:8081 ) to view the database
+## Project Structure 📁
+- /frontend : React application with Vite
+  - /src : Source code
+  - /components : React components
+  - /pages : Application pages
+  - /context : React context for state management
+- /backend : Node.js/Express API
+  - /src : Source code
+  - /controllers : API controllers
+  - /models : Database models
+  - /routes : API routes
+- docker-compose.yml : Docker services configuration
+- .env files: Environment configuration
+## Tecnologias usadas 🛠
+- Frontend:
+  - React 18
+  - Tailwind CSS
+  - React Router
+  - Context API
+  - Vite
+- Backend:
+  - Node.js
+  - Express
+  - MongoDB
+  - Mongoose
+- DevOps:
+  - Docker
+  - Docker Compose
+  - Mongo Express
+## Author 👨‍💻
+Armando Marelius Garcia Paulsen
